@@ -1,0 +1,637 @@
+* {
+	margin: 0;
+}
+
+.pre-header {
+	/*background-color: #D1D1D1;*/
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+/* Css for top logo section */
+
+.logo {
+  /*background-color: red;*/
+  background: url(../img/background/redbg.jpg) no-repeat center center;
+	background-size: cover;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox; 
+  display: flex;
+  justify-content: center;
+   -ms-flex-wrap: wrap; 
+      flex-wrap: wrap;
+}
+
+.logo img {
+  background: url(../img/background/greybg.jpg) no-repeat center center;
+  background-size: cover;  /* new background design */
+
+  border-radius: 4px;
+  height: 250px; 
+  padding: 10px;
+  border: 8px ridge white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+
+}
+
+.logo a:hover { /* creates a light-up effect  */
+  -webkit-transition: all .7s;
+  transition: all .7s;
+  -webkit-filter: brightness(220%); 
+  filter: brightness(220%);
+  transition: all 2s ease-out;
+}
+
+
+.col-left {
+
+	text-align: center;
+	margin: auto;
+	text-transform: uppercase;
+	word-spacing: 1px;
+}
+
+.col-left h1 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 900;
+	
+	border: 5px ridge #D1D1D1; /* new background design and positioning  */
+	border-radius: 4px;
+	margin: 1px;
+	margin-top: 8px;
+	margin-right: 20px;
+	padding: 10px;
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	/*background-color: inherit;*/
+	background-size: cover;
+}
+
+.center {
+	text-align: center;
+}
+
+.col-right {
+   background: url(../img/background/greybg.jpg) no-repeat center center;
+   /*background-color: inherit;*/
+	background-size: cover;
+	text-align: center;
+	margin: 8% auto;
+		
+	border: 4px ridge #fff; /* button effect */
+	border-bottom: 5px solid grey;
+	border-left: 5px solid grey;
+	border-radius: 4px;
+
+    cursor: pointer; 
+    transition: all 0.4s ease-out;
+
+}
+
+.col-right:hover {
+  text-decoration: none;
+}
+
+.col-right:active { /* button effect */
+	border: 1px solid #fff;
+	border-top: 5px solid grey;
+	border-right: 5px solid grey;
+}
+
+.col-right h1 {
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover;    /* new background design */
+	/*border: 4px ridge #D1D1D1;*/
+	border-radius: 4px;
+
+	color: white;
+	font-size: 30px;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+.col-right a:hover {
+	text-decoration: none;
+}
+
+.col-right a:active {
+	text-decoration: none;
+}
+
+/* -------------pop up window  ---------*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  /* background: #fff; */
+  background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover;  /* new background design */
+
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 900;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.popup .close:hover {
+  color: #D90016;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  background-color: #fff; 
+  /*background: url(../img/background/greybg.jpg) no-repeat center center;
+  background-size: cover; /* new background design */
+  /*background-color: inherit;*/
+  font-size: 20px;
+}
+
+.popup .content p {
+	color: #D90016;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+/*---------------------------*/
+
+
+/* Css for nav menu section */
+
+.top {
+
+	text-align: center;
+	text-transform: uppercase;
+
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover; /*new background design*/
+	/*background-color: #D1D1D1;*/
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.top li {
+    display: inline-block;
+	padding: 1rem; 
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-right: 1rem;
+	margin-top: 5px;
+	margin-bottom: -10px;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 900;
+	/* background-color: #D1D1D1; */
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover;/* new background design */
+	
+	border: 1px solid #fff; /* button effect */
+	border-bottom: 5px solid grey;
+	border-left: 5px solid grey;
+	border-radius: 4px;
+
+}
+
+.menu a {
+	color: #fff;
+	padding: 15px;
+} 
+
+.menu a:hover {
+	text-decoration: none;
+	color: #D90016;
+	transition: all 0.9s ease-out;
+}
+
+.menu li:active { /* button effect */
+	text-decoration: none;
+	border-top: 5px solid grey;
+	border-right: 5px solid grey;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	padding-top: 12px;
+
+}
+/*----------------------------------- */
+
+/* Css for banner area and background image */
+
+.banner {
+    background: url(../img/background/weights.jpg) no-repeat center center;
+    background-size: cover;
+	min-height: 400px;
+
+	/* display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: flex-end; */
+
+}
+
+.banner h1 {
+	color: #fff;
+	font-size: 75px;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 10rem;
+	border-bottom: 2px solid #fff;
+
+}
+/* ---------------------------------------------------------- */
+
+/*  Css for content section below banner area  */
+
+.content {
+	margin-top: 5px;
+    margin-bottom: 20px;
+    height: 100%;
+     
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+	/* background-color: #D1D1D1; */
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover; /* new background design */
+	
+}
+
+ .items img {
+	max-height: 350px;
+	max-width: 290px;
+	height: 350px
+	width: 290px;
+	margin-bottom: 20px;
+	border: 5px solid #fff;
+
+}
+
+
+.items h3 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+}
+/* --------------------------------------- */
+
+/*  Css for Team section  */
+
+.title h1 {    /*  styles all title headings  */
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 900;
+	color: #D90016;
+	text-align: center;
+	margin: 40px 0;
+	border-bottom: 2px solid #D90016;
+
+}
+
+.team {
+	border: 10px solid inherit; 
+	/* background-color: #D1D1D1; */
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover; /* new background design */
+	/*overflow: scroll; 
+	max-height: 900px; */
+}
+
+
+.team .bio {
+	text-align: center;
+	
+}
+
+.team .bio h6 {
+	color: white;
+	font-size: 30px;
+	font-weight: 600;
+
+	max-width: 190px;
+
+    border: 5px ridge #c4c4c4;
+    border-radius: 4px;
+	/*background-color: gold /*#FAFAFA*/;
+	background: url(../img/background/platbg.jpg) no-repeat center center;
+	background-size: cover; /* new background design */
+	padding-top: 35px; 
+	padding-bottom: 45px;
+
+
+}
+
+.col-md-2 { /* positions team members name  */
+	margin-top: 40px;
+	position: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/* border: 7px ridge white; */
+}
+
+.team .photo {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+
+	background-color: inherit;
+	margin-bottom: 10px;
+	margin-top: 10px
+
+}
+
+.team .photo img {
+		max-height: 290px;
+		max-width: 210px;
+		padding: 5px;
+		border: 2px solid white;
+		background-color: white;
+	
+	    /*border-radius: 10px;*/
+}
+
+
+/*----------------------------------------*/
+
+/*  Video section */
+.video {
+	
+     margin: auto;
+}
+
+.video .col-md-4 {
+	margin: auto;
+	border: 5px double #D1D1D1;
+	/* background-color: #D1D1D1; */
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover; /* new background design */
+
+	max-width: 600px;
+	text-align: center;
+	padding: 10px;
+}
+
+iframe, video {
+	
+	border: 2px solid white;
+	padding: 5px;
+	background-color: white;
+}
+
+video {
+	
+    border: 8px solid white;
+	background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover; /* new background design */
+}
+/* ------------------------------------------*/
+
+/*      Gallery section    */
+
+.gallerycontainer {
+    position: relative;
+     /*Add a height attribute and set to largest image's height to prevent overlaying*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* background-color: #D1D1D1; */
+    background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover; /* new background design */
+
+}
+
+.gallerycontainer a {
+  border-style: none;
+  color: white;
+  background-color: inherit;  /* inherits the background image design */
+}
+
+.thumbnail img {
+    border: 5px solid white;
+    margin: 0 5px 5px 0;
+}
+
+.thumbnail:active {
+    background-color: transparent;
+
+}
+
+.thumbnail:active img {
+    border: 3px solid #D1D1D1;
+}
+
+.thumbnail span { /*CSS for enlarged image*/
+    position: absolute;
+    background-color: #D1D1D1;
+    padding: 5px;
+    left: -1000px;
+    border: 5px solid white;
+    visibility: hidden;
+    color: white;
+    text-decoration: none;
+}
+
+.thumbnail span img { /*CSS for enlarged image*/
+    border-width: 0;
+    padding: 2px;
+}
+
+.thumbnail:active span { /*CSS for enlarged image*/
+    visibility: visible;
+    top: 100px;
+    left: 130px; /*position where enlarged image should offset horizontally */
+    z-index: 50;
+    
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* ------------------------------------ */
+
+/* Css for shop apparel section   */
+
+#shop-btn {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	background: url(../img/gallery/photo5.jpg) no-repeat center center;
+	height: 250px;
+}
+
+#shop-btn button {
+	position: relative;
+	top: 30px;
+	opacity: 0.8;
+}
+ #shop-btn .border {
+ 	border: 3px solid #D1D1D1;
+ 	padding: 100px 120px;
+
+ }
+
+
+
+/*----------------------------------------------*/
+
+/*      Css for Contact area          */
+
+.contact {
+    text-align: center;
+    min-height: 300px;
+    /* background-color: #D1D1D1; */
+    background: url(../img/background/greybg.jpg) no-repeat center center;
+	background-size: cover; /* new background design */
+    border-top: 3px solid #D90016;
+    border-bottom: 3px solid #D90016;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h1 {
+	color: #D90016;
+	font-size: 50px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 75px;
+}
+
+.contact p {
+	color: white;
+	font-size: 30px;
+}
+
+#social img {
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+}
+
+#social img:hover {
+	opacity: 0.5;
+}
+
+.cta {  /*  styles the button links   */
+    background-color: grey;
+    color: white;
+    padding: 0;
+    width: 180px;
+    font-size: 18px;
+    line-height: 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #D90016;
+}
+
+#link {  /* css for the words wrapped with the link tag */
+	color: #D90016; 
+}
+
+/*--------------------------------------------*/
+
+/*    Css for footer section    */
+#footer {
+    height: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#footer h3 {
+	color: #D90016;
+	margin-top: 0;
+
+}
+
+#footer a {
+    color: #D90016;
+    font-size: 16px;
+    line-height: 60px;
+    padding: 50px;
+}
+
+#footer .footer-item {
+    flex: 2;
+    max-width: 100px;
+}
+
+.copyright {
+    margin-left: auto;
+    color: #D90016;
+}
+
+/* ------------------------------------- */
